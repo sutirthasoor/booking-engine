@@ -1,0 +1,15 @@
+/* Original page stylesheet (verbatim). It came BEFORE the Tailwind CDN styles in the original
+   cascade, so it is imported first here as well. */
+@import './legacy.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Equivalents of inline "!important" styles that the original injected through JS strings */
+.hotel-card .hotel-carousel,
+.hotel-card .hotel-carousel-inner,
+.hotel-card .hotel-carousel-item {
+  height: 260px !important;
+  min-height: 260px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "kakkson-booking-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Kakkson Hotels booking API - all pricing, availability, booking, payment, email and voucher logic",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jspdf": "2.5.1"
+  }
+}
